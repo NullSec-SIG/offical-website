@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\assets\\js",
     "\\assets\\scss"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\assets\\scss\\styles.scss",
   "PreviewInSolutionExplorer": false
 }
