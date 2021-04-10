@@ -5,6 +5,7 @@
     <meta author="c">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/favicon.png">
     <title>NullSec</title>
@@ -24,7 +25,9 @@
                     <li class="nav__item"><a href="#aboutus" class="nav__link active-link">About Us</a></li>
                     <li class="nav__item"><a href="#whatwedo" class="nav__link">What We Do</a></li>
                     <li class="nav__item"><a href="#social" class="nav__link">Social</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
                     <li class="nav__item"><a href="#signup" class="nav__link">Sign Up</a></li>
+                    <li class="nav__item"><a href="exploit.html" class="nav__link">BeEf Exploit</a></li>
 
                     <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
                 </ul>
@@ -62,7 +65,7 @@
                 <div class="share__data">
                     <h2 class="section-title-center">This Is What We Do</h2>
                     <p class="share__description">
-                        At NullSec, we aim to share and spread our knowledge in the cybersecurity field through 
+                        At NullSec, we aim to share and spread our knowledge in the cybersecurity field through
                         workshops conducted by our members and participating is various competition.
                     </p>
                 </div>
@@ -95,13 +98,49 @@
                 </div>
             </div>
         </section>
+        <!-- GALLERY -->
+        <section class="container" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery__data">
+                            <img src="assets/img/gallery/img1.jpg" alt="" class="gallery__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__data">
+                            <img src="assets/img/gallery/img2.jpg" alt="" class="gallery__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__data">
+                            <img src="assets/img/gallery/img3.jpg" alt="" class="gallery__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__data">
+                            <img src="assets/img/gallery/img4.jpg" alt="" class="gallery__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__data">
+                            <img src="assets/img/gallery/img5.jpg" alt="" class="gallery__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         <!-- SIGN UP -->
         <section class="send section" id="signup">
             <div class="send__container bd-container bd-grid">
                 <div class="send__content">
                     <h2 class="section-title-center send__title">Join Us</h2>
                     <p class="send__description">
-                        Become A member of the club and get updates on the latest events and be informed of 
+                        Become A member of the club and get updates on the latest events and be informed of
                         our upcoming workshops!
                     </p>
                     <a href="#" class="button">Fill Up The Form</a>
@@ -122,8 +161,8 @@
                     <a href="#" class="footer__logo">NullSec SIG</a>
                 </h3>
                 <p class="footer__description">
-                    Why did the programmer leave the camping trip early? 
-                    <br><br> 
+                    Why did the programmer leave the camping trip early?
+                    <br><br>
                     &lt;There were too many bugs&gt;
                 </p>
             </div>
@@ -142,8 +181,8 @@
                     <a href="#" class="footer__logo">NullSec SIG</a>
                 </h3>
                 <p class="footer__description">
-                    What’s the best way to catch a runaway robot? 
-                    <br><br> 
+                    What’s the best way to catch a runaway robot?
+                    <br><br>
                     &lt;Use a botnet&gt;
                 </p>
             </div>
@@ -154,7 +193,22 @@
         </div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/scrambler.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 </body>
 </html>
